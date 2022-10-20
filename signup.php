@@ -1,12 +1,8 @@
 <?php
 include "css.php";
-$server="mysql:host=localhost;dbname=coincap";
-$username="root";
-$password="";
-$conn= new PDO($server,$username,$password);
+include "dbconn.php";
 $data= $conn->query("SELECT * FROM signup");
 $fetch=$data->fetchAll(PDO::FETCH_ASSOC);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,8 +53,6 @@ if(isset($_POST['submit']))
     }
    
 }
-
-
 ?>    
 </body>
 </html>

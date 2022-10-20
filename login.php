@@ -1,10 +1,8 @@
 <?php
 // session_start();
 include "css.php";
-$server="mysql:host=localhost;dbname=coincap";
-$username="root";
-$password="";
-$conn= new PDO($server,$username,$password);
+include "dbconn.php";
+
 $data= $conn->query("SELECT * FROM login");
 $fetch=$data->fetchAll(PDO::FETCH_ASSOC);
 ?>
