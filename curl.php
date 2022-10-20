@@ -6,5 +6,4 @@ $response = curl_exec($ch);
 $error = curl_error($ch);
 curl_close($ch);
 $response = json_decode($response,true);
-
 ?>

@@ -103,7 +103,7 @@ include "curl.php";
         </div>
 </main>
 <footer id="container">
-    <img src="footer.jpg"/>
+    <img src="../imgs/footer.jpg"/>
     </footer>
 </body>
 </html>
